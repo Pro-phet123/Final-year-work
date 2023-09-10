@@ -1,8 +1,8 @@
-def main():
+#def main():
 # The credit card fraud detection system web-based Gui code
     import streamlit as st
     import numpy as np
-    import tensorflow as tf
+    #import tensorflow as tf
     import pandas as pd
     from keras.models import load_model
     import h5py
@@ -75,5 +75,5 @@ def main():
             else:
                 st.write('This transaction is **non fraudulent.** ')
 
-if __name__ == "__main__":
-    main()
+#if __name__ == "__main__":
+    #main()
