@@ -12,8 +12,8 @@ model_training = st.container()
 
 @st.cache_data
 def get_data(filename):
-data = pd.read_csv(filename)
-return data
+    data = pd.read_csv(filename)
+    return data
 
 with header:
     st.title('Credit Card Fraud Detection System')
