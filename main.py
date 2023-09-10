@@ -1,7 +1,7 @@
 #def main():
 # The credit card fraud detection system web-based Gui code
 from keras.models import load_model
-    
+import streamlit as st
 
 
 
