@@ -1,11 +1,7 @@
 #def main():
 # The credit card fraud detection system web-based Gui code
-    #import streamlit as st
-    #import numpy as np
-    #import tensorflow as tf
     import pandas as pd
     from keras.models import load_model
-    #import h5py
     import os
 
 
