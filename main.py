@@ -1,6 +1,6 @@
 #def main():
 # The credit card fraud detection system web-based Gui code
-    import pandas as pd
+   
     from keras.models import load_model
     import os
 
