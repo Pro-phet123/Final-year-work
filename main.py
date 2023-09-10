@@ -43,7 +43,7 @@ with dataset:
 with visualisations:
     st.header('visualisation')
     st.subheader('The Distribution of the Online Credit Card Transactions')
-    payment_type = pd.DataFrame(online_transactions['type'].value_counts())
+            payment_type = pd.DataFrame(online_transactions['type'].value_counts())
     st.bar_chart(payment_type)
 
 
