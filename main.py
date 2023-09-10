@@ -26,7 +26,7 @@ with dataset:
     st.header('The Online Credit Card Transactions Dataset')
     st.text('I got this dataset from Kaggle. It contains over six million samples and 11 features of online transactions')
     st.subheader('The Datasets First Five Rows(The Head)')
-    online_transactions = get_data("C:/Users/User/Documents/Ntel Ola/GUI/transact.csv")
+    online_transactions = get_data("C:/Users/User/Documents/Ntel Ola/Project1/transact.csv")
     st.write(online_transactions.head())
 
 
@@ -56,7 +56,7 @@ with model_training:
     input_feature_3 = st.number_input('What is your current account balance?', min_value=0.0, step=1000.0)
     input_feature_4 = st.number_input('What will your account balance be after the transaction?', min_value=0.0, step=1000.0)
 
-model_path = "C:/Users/User/Documents/Ntel Ola/GUI/autoenconder_mmodel.h5"
+model_path = "C:/Users/User/Documents/Ntel Ola/Project1/autoenconder_mmodel.h5"
 with h5py.File(model_path, 'r') as model_path:
     model = tf.keras.models.load_model(model_path)
 
