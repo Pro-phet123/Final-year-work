@@ -43,8 +43,13 @@ with dataset:
 with visualisations:
     st.header('visualisation')
     st.subheader('The Distribution of the Online Credit Card Transactions')
+    file_path = 'C:/Users/User/Documents/Ntel Ola/Project1/transact.csv'
+    if os.path.exists(file_path):
+        # The file exists, proceed with operations on it
+        with open(file_path, 'r') as file:
+        # Perform file operations here
             payment_type = pd.DataFrame(online_transactions['type'].value_counts())
-    st.bar_chart(payment_type)
+            st.bar_chart(payment_type)
 
 
 with model_training:
