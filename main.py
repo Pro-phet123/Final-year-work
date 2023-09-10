@@ -6,6 +6,7 @@ import numpy as np
 import pandas as pd
 import tensorflow as tf
 import h5py
+import os
 
 header = st.container()
 dataset = st.container()
@@ -26,8 +27,17 @@ with dataset:
     st.header('The Online Credit Card Transactions Dataset')
     st.text('I got this dataset from Kaggle. It contains over six million samples and 11 features of online transactions')
     st.subheader('The Datasets First Five Rows(The Head)')
-    online_transactions = get_data("C:/Users/User/Documents/Ntel Ola/Project1/transact.csv")
-    st.write(online_transactions.head())
+    
+
+    file_path = 'C:/Users/User/Documents/Ntel Ola/Project1/transact.csv'
+    if os.path.exists(file_path):
+        # The file exists, proceed with operations on it
+        with open(file_path, 'r') as file:
+        # Perform file operations here
+            online_transactions = get_data(file_path)
+            st.write(online_transactions.head())
+    else:
+        print("File not found at the specified path.")
 
 
 with visualisations:
