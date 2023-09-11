@@ -66,7 +66,7 @@ with model_training:
     st.markdown('TRANSFER: 4')
     st.markdown('DEBIT: 5')
 
-    nput_feature_1 = st.slider('What transaction are you performing?', min_value=1, max_value=5, step=1, value=1)
+    input_feature_1 = st.slider('What transaction are you performing?', min_value=1, max_value=5, step=1, value=1)
     input_feature_2 = st.number_input('What amount would you like to input?', min_value=0.0, step=1000.0)
     input_feature_3 = st.number_input('What is your current account balance?', min_value=0.0, step=1000.0)
     input_feature_4 = st.number_input('What will your account balance be after the transaction?', min_value=0.0, step=1000.0)
