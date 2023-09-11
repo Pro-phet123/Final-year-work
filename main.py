@@ -75,17 +75,17 @@ model_path = "C:/Users/User/Documents/Ntel Ola/Project1/autoenconder_mmodel.h5"
 with h5py.File(model_path, 'r') as model_file:
     model = tf.keras.models.load_model(model_path)
 
-    #def preprocess_input(input_data):
-        #return input_data
+    
 
     submit = st.button('Predict')
     if submit:
         prediction = model.predict([[input_feature_1, input_feature_2, input_feature_3, input_feature_4]])
-               
-        if prediction == 'Fraud':
+        threshold = 0.9
+        if prediction[0][0] > threshold:
             st.write('This transaction is **fraudulent.** ')
         else:
             st.write('This transaction is **non fraudulent.** ')
-
+#def preprocess_input(input_data):
+        #return input_data
 #if __name__ == "__main__":
     #main()
