@@ -4,3 +4,4 @@ h5py == 3.9.0
 numpy>= 1.17.3
 tensorflow == 2.13.0
 pandas == 2.1.0
+tables == 3.8.0
