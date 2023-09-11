@@ -28,7 +28,7 @@ with dataset:
     st.header('The Online Credit Card Transactions Dataset')
     st.text('I got this dataset from Kaggle. It contains over six million samples and 11 features of online transactions')
     st.subheader('The Datasets First Five Rows(The Head)')
-    online_transactions = get_data(transact.csv)
+    online_transactions = get_data(C:/Users/User/Documents/Ntel Ola/Project1/transact.csv)
     st.write(online_transactions.head())
 
 
@@ -64,7 +64,7 @@ def get_data(filename):
     data = pd.read_hdf(filename)
     return data
 
-model_path = get_data(autoenconder_mmodel.h5)
+model_path = get_data(C:/Users/User/Documents/Ntel Ola/Project1/autoenconder_mmodel.h5)
 with h5py.File(model_path, 'r') as model_file:    
     model = tf.keras.models.load_model(model_path)
 
