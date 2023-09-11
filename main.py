@@ -28,7 +28,7 @@ with dataset:
     st.header('The Online Credit Card Transactions Dataset')
     st.text('I got this dataset from Kaggle. It contains over six million samples and 11 features of online transactions')
     st.subheader('The Datasets First Five Rows(The Head)')
-    online_transactions = get_data("C:/Users/User/Documents/Ntel Ola/Project1/transact.csv")
+    online_transactions = get_data('transact.csv')
     st.write(online_transactions.head())
 
 
