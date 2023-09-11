@@ -73,7 +73,7 @@ with model_training:
 
 model_path = "C:/Users/User/Documents/Ntel Ola/Project1/autoenconder_mmodel.h5"
 with h5py.File(model_path, 'r') as model_file:
-model = tf.keras.models.load_model(model_path)
+    model = tf.keras.models.load_model(model_path)
 
     #def preprocess_input(input_data):
         #return input_data
