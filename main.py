@@ -72,7 +72,7 @@ with model_training:
     input_feature_4 = st.number_input('What will your account balance be after the transaction?', min_value=0.0, step=1000.0)
 
 model_path = "C:/Users/User/Documents/Ntel Ola/Project1/autoenconder_mmodel.h5"
-with h5py.File(model_path, 'r') as model_path:
+with h5py.File(model_path, 'r') as model_file:
 model = tf.keras.models.load_model(model_path)
 
     #def preprocess_input(input_data):
