@@ -71,20 +71,23 @@ with model_training:
     input_feature_3 = st.number_input('What is your current account balance?', min_value=0.0, step=1000.0)
     input_feature_4 = st.number_input('What will your account balance be after the transaction?', min_value=0.0, step=1000.0)
 
-model_path = "C:\Users\User\Documents\Ntel Ola\Project1\autoenconder_mmodel.h5"
-with h5py.File(model_path, 'r') as model_file:
-    model = tf.keras.models.load_model(model_path)
+model_path = 'C:/Users/User/Documents/Ntel Ola/Project1/autoenconder_mmodel.h5'
+if os.path.exists(model_path):
+        # The file exists, proceed with operations on it
+        with open(model_path, 'r') as file:
+            with h5py.File(model_path, 'r') as model_file:
+                model = tf.keras.models.load_model(model_path)
 
     
 
-    submit = st.button('Predict')
-    if submit:
-        prediction = model.predict([[input_feature_1, input_feature_2, input_feature_3, input_feature_4]])
-        threshold = 0.9
-        if prediction[0][0] > threshold:
-            st.write('This transaction is **fraudulent.** ')
-        else:
-            st.write('This transaction is **non fraudulent.** ')
+                submit = st.button('Predict')
+                if submit:
+                    prediction = model.predict([[input_feature_1, input_feature_2, input_feature_3, input_feature_4]])
+                    threshold = 0.9
+                    if prediction[0][0] > threshold:
+                        st.write('This transaction is **fraudulent.** ')
+                    else:
+                        st.write('This transaction is **non fraudulent.** ')
 #def preprocess_input(input_data):
         #return input_data
 #if __name__ == "__main__":
