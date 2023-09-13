@@ -72,7 +72,7 @@ with h5py.File(model_path, 'r') as model_path:
         prediction = model.predict([[transaction_type_numeric, input_feature_2, input_feature_3, input_feature_4]])
         threshold = 0.39727665
         if prediction[0][0] <= threshold :
-           st.write('This transaction is **fraudulent**.', {prediction[0][0]})
+           st.write('This transaction is **fraudulent**.')
         else:
-            st.write('This transaction is **non fraudulent**.' , {prediction[0][0]} )
+            st.write('This transaction is **non fraudulent**.')
 
