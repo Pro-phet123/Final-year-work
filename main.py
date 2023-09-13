@@ -21,7 +21,7 @@ def get_data(filename):
 
 with header:
     st.title('Credit Card Fraud Detection System')
-    st.text('In my project, \nI looked into the trends of online fraudulent credit card transactions.')
+    st.text('In my project, I looked into the trends of \nonline fraudulent credit card transactions.')
 
 
 with dataset:
@@ -41,8 +41,8 @@ with visualisations:
 
 with model_training:
     st.subheader("**User's Input**")
-    st.text("A deep learning autoencoder (AE) algorithm was used to create the model for prediction.")
-    st.text("**PROVIDE YOUR TRANSACTION DETAILS FOR PREDICTION.")
+    st.text("A deep learning autoencoder (AE) algorithm, \nwas used to create the model for prediction.")
+    st.text("PROVIDE YOUR TRANSACTION DETAILS FOR PREDICTION.")
     
 
 # Transaction types mapping
