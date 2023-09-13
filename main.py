@@ -26,7 +26,7 @@ with header:
 
 with dataset:
     st.header('The Online Credit Card Transactions Dataset')
-    st.text("I got this dataset from Kaggle. \nIt contains over six million samples and 11 features of online transactions.")
+    st.text("I got this dataset from Kaggle. \nIt contains over six million samples and \n11 features of online transactions.")
     st.subheader('The Datasets First Five Rows(The Head)')
     online_transactions = get_data('transact.csv')
     st.write(online_transactions.head())
@@ -41,7 +41,7 @@ with visualisations:
 
 with model_training:
     st.subheader("**User's Input**")
-    st.text("A deep learning autoencoder algorithm (AE) was used to create the model used for prediction")
+    st.text("A deep learning autoencoder algorithm (AE) was used \nto create the model used for prediction")
     st.text('Provide your transaction details for prediction.')
     
 
