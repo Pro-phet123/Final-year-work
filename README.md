@@ -16,3 +16,30 @@ The dataset I used is a sample of a dataset gotten from Kaggle. It contains six 
 *Installing packages* pip install -r requirements.txt
 
 *This app has been deployed and can be viewed at:* https://pro-phet123-final-year-work-main-6mzu7f.streamlit.app/
+
+
+
+
+
+# Credit Card Fraud Detection System Web-Based GUI
+
+The Credit Card Fraud Detection System is a web-based graphical user interface (GUI) built to analyze online credit card transactions and predict fraudulent activities. It utilizes Python programming with libraries such as Streamlit, NumPy, TensorFlow, and pandas to create an interactive and informative platform.
+
+## Features
+
+Dataset Exploration: Provides insights into the online credit card transactions dataset, sourced from Kaggle, including key features and sample data.
+
+*Data Visualizations:* Visualizes the distribution of online credit card transactions to understand trends and patterns.
+
+*Model Prediction:* Utilizes a deep learning autoencoder algorithm to predict fraudulent transactions based on user input.
+
+
+## Prerequisites
+
+Before running the project, ensure you have Python 3.9 installed on your system.
+
+
+*To Setup LocallyClone the Repository:* 
+``` bash
+git clone https://github.com/[repository_name].git
+```
