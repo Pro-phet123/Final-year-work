@@ -1,34 +1,14 @@
-
-# credit-card-fraud-detection-system-
-The credit card fraud detection system detects online fraud using the input data of the user. The Model uses a Gui to collect the necessary data and when the predict button is clicked on by the user, the model predicts if the credit card transaction is fraudulent or not.
-
-# Dataset Description
-
-
-# How to setup this project locally
-*clone the repo git clone git clone:* https://github.com/Pro-phet123/Final-year-work/
-
-*Then* run streamlit run main.py to view the app locally
-
-*Installing packages* pip install -r requirements.txt
-
-*This app has been deployed and can be viewed at:* 
-
-
-
-
-
 # Credit Card Fraud Detection System Web-Based GUI
 
 The Credit Card Fraud Detection System is a web-based graphical user interface (GUI) built to analyze online credit card transactions and predict fraudulent activities. It utilizes Python programming with libraries such as Streamlit, NumPy, TensorFlow, and pandas to create an interactive and informative platform.
 
 ## Features
 
-Dataset Exploration: Provides insights into the online credit card transactions dataset, sourced from Kaggle, including key features and sample data.
+**Dataset Exploration:** Provides insights into the online credit card transactions dataset, sourced from Kaggle, including key features and sample data.
 
-*Data Visualizations:* Visualizes the distribution of online credit card transactions to understand trends and patterns.
+**Data Visualizations:** Visualizes the distribution of online credit card transactions to understand trends and patterns.
 
-*Model Prediction:* Utilizes a deep learning autoencoder algorithm to predict fraudulent transactions based on user input.
+**Model Prediction:** Utilizes a deep learning autoencoder algorithm to predict fraudulent transactions based on user input.
 
 
 ## Prerequisites
@@ -55,7 +35,7 @@ Cd main.py/
 **3. Install Project Dependencies :**
 
 ```bash
-pip install streamlit numpy tensorflow pandas h5py
+pip install -r requirements.txt
 ```
 
 **4. Run The Web Application :**
@@ -72,9 +52,7 @@ streamlit run main.py
 
 ## Using The Web Application 
 
-**1. Explore Visualizations:** Allows to view a metric of the Distribution of the Online Credit Card Transactions.
-
-**2. Provide Input for Prediction:** Enter the following values:
+**1. Provide Input for Prediction:** Enter the following values:
 
 A Dropdown menu was used to choose the type of transaction to take place.
 
@@ -86,7 +64,7 @@ Enter current account balance.
 
 Enter account balance after the transaction.
 
-**3. Click Predict:** The application will display the prediction of the transactionwhetherit was fraudulentor not.
+**2. Click Predict:** The application will display the prediction of the transactionwhetherit was fraudulentor not.
 
 
 ## Dataset
@@ -123,9 +101,9 @@ H5py
 
 ## Some Informations To Note
 
-The ```linear_regression_model.joblib``` file contains the trained machine learning model.
+The ```autoenconder_mmodel.h5``` file contains the trained deep learning model.
 
-The ```interactions.csv``` file contains the Facebook post interactions dataset.
+The ```transactions.csv``` file contains the past history of users transactions dataset.
 
 ## Contact
 
