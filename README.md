@@ -6,7 +6,7 @@
 
 ---
 
-## 📊 Overview
+## Overview
 
 The **Credit Card Fraud Detection System** is a web-based machine learning application designed to analyze online financial transactions and detect potentially fraudulent activities.
 
@@ -20,7 +20,7 @@ The platform provides:
 
 ---
 
-## 🎯 Key Features
+##  Key Features
 
 ### 🧠 Deep Learning Fraud Detection Engine
 Uses an Autoencoder neural network to detect anomalous transaction behavior associated with fraudulent activity.
@@ -45,7 +45,7 @@ Provides insight into transaction records, feature distributions, and sample fin
 
 ---
 
-## 🧠 Model Overview
+## Model Overview
 
 - **Algorithm:** Deep Learning Autoencoder  
 - **Task Type:** Anomaly Detection / Fraud Detection  
