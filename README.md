@@ -1,110 +1,113 @@
-# Credit Card Fraud Detection System Web-Based GUI
+# Credit Card Fraud Detection System
 
-The Credit Card Fraud Detection System is a web-based graphical user interface (GUI) built to analyze online credit card transactions and predict fraudulent activities. It utilizes Python programming with libraries such as Streamlit, NumPy, TensorFlow, and pandas to create an interactive and informative platform.
+<p align="center">
+  <b>Deep learning-based fraud detection system for identifying suspicious online credit card transactions in real time.</b>
+</p>
 
-## Features
+---
 
-**Dataset Exploration:** Provides insights into the online credit card transactions dataset, sourced from Kaggle, including key features and sample data.
+## 📊 Overview
 
-**Data Visualizations:** Visualizes the distribution of online credit card transactions to understand trends and patterns.
+The **Credit Card Fraud Detection System** is a web-based machine learning application designed to analyze online financial transactions and detect potentially fraudulent activities.
 
-**Model Prediction:** Utilizes a deep learning autoencoder algorithm to predict fraudulent transactions based on user input.
+Built with **Streamlit**, **TensorFlow**, and **Python**, the system leverages an **Autoencoder deep learning model** trained on large-scale transaction data to identify abnormal transaction behavior patterns.
 
+The platform provides:
+- Real-time fraud prediction  
+- Transaction data analysis  
+- Interactive visualizations  
+- User-friendly fraud detection interface  
 
-## Prerequisites
+---
 
-Before running the project, ensure you have Python 3.9 installed on your system.
+## 🎯 Key Features
 
+### 🧠 Deep Learning Fraud Detection Engine
+Uses an Autoencoder neural network to detect anomalous transaction behavior associated with fraudulent activity.
 
-## To Setup Locally
+---
 
+### 📈 Transaction Data Visualization
+Interactive visualizations for exploring:
+- Transaction distributions  
+- Fraud vs non-fraud patterns  
+- Behavioral trends in payment activity  
 
-**1. Clone this project repository :**
+---
 
+### ⚡ Real-Time Prediction System
+Allows users to input transaction details and instantly receive fraud prediction results.
 
+---
+
+### 📊 Dataset Exploration Interface
+Provides insight into transaction records, feature distributions, and sample financial data.
+
+---
+
+## 🧠 Model Overview
+
+- **Algorithm:** Deep Learning Autoencoder  
+- **Task Type:** Anomaly Detection / Fraud Detection  
+- **Framework:** TensorFlow / Keras  
+- **Input Features:** Online transaction attributes  
+- **Output:** Fraudulent or Non-Fraudulent transaction prediction  
+
+The model was trained using a large-scale online payment transaction dataset containing millions of transaction records.
+
+---
+
+## 🏗️ System Architecture
+
+```text
+User Transaction Input
+        ↓
+Data Validation & Preprocessing
+        ↓
+Feature Engineering Layer
+        ↓
+Autoencoder Deep Learning Model
+        ↓
+Anomaly Detection Logic
+        ↓
+Fraud Prediction Output
+        ↓
+Streamlit Visualization Interface
+
+```
+##Run Locally 
+
+#### Clone the repo
 ```bash
 git clone https://github.com/Pro-phet123/Final-year-work.git
 ```
-
-**2. Change into the project directory :**
-
+#### Enter into project directory
 ```bash
-Cd main.py/ 
+cd Final-year-work
+```
+#### Create virtual environment
+```bash
+python -m venv venv
+```
+#### Activate virtual environment(windows)
+```bash
+venv\Scripts\activate
 ```
 
-**3. Install Project Dependencies :**
+#### Activate virtual environment(mac/linux)
+```bash
+source venv/bin/activate
+```
 
+#### Install dependencies
 ```bash
 pip install -r requirements.txt
 ```
-
-**4. Run The Web Application :**
-
+#### Run the application
 ```bash
-streamlit run main.py 
+streamlit run main.py
 ```
 
+## 🌐 Live Demo
 
-# About The Web Application
-
-## Link To The Web Application (Deployed Using Streamlit): https://pro-phet123-final-year-work-main-6mzu7f.streamlit.app/
-
-
-## Using The Web Application 
-
-**1. Provide Input for Prediction:** Enter the following values:
-
-A Dropdown menu was used to choose the type of transaction to take place.
-
-While textbox was used to:
-
-Enter transaction amount.
-
-Enter current account balance.
-
-Enter account balance after the transaction.
-
-**2. Click Predict:** The application will display the prediction of the transactionwhetherit was fraudulentor not.
-
-
-## Dataset
-
-The dataset I used is a sample of a dataset gotten from Kaggle. It contains six million online credit card transaction samples and 11 features of each transaction. An autoencoder was used for the development(which includes training and testing the model) and Streamlit was used to create a web app for the application.
-
-*The link to the full dataset:* https://www.kaggle.com/datasets/rupakroy/online-payments-fraud-detection-dataset
-
-
-## Model
-
-The prediction model is an Autoencoder model trained on the provided dataset.
-
-## Technology Stack
-
-Python
-
-Streamlit
-
-NumPy
-
-Seaborn
-
-TensorFlow
-
-Matplotlib
-
-Pandas
-
-Keras
-
-H5py
-
-
-## Some Informations To Note
-
-The ```autoenconder_mmodel.h5``` file contains the trained deep learning model.
-
-The ```transactions.csv``` file contains the past history of users transactions dataset.
-
-## Contact
-
-For any questions or feedback, please reach out to [Name: Olalemi Olaoluwakintan, E-mail: olalemiolaoluwakintan@gmail.com].
+[Launch Web App](https://pro-phet123-final-year-work-main-6mzu7f.streamlit.app/)
