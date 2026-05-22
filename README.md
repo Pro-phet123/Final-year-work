@@ -27,7 +27,7 @@ Uses an Autoencoder neural network to detect anomalous transaction behavior asso
 
 ---
 
-### 📈 Transaction Data Visualization
+###  📊 Transaction Data Visualization
 Interactive visualizations for exploring:
 - Transaction distributions  
 - Fraud vs non-fraud patterns  
@@ -40,7 +40,7 @@ Allows users to input transaction details and instantly receive fraud prediction
 
 ---
 
-### 📊 Dataset Exploration Interface
+### Dataset Exploration Interface
 Provides insight into transaction records, feature distributions, and sample financial data.
 
 ---
@@ -57,7 +57,7 @@ The model was trained using a large-scale online payment transaction dataset con
 
 ---
 
-## 🏗️ System Architecture
+##  System Architecture
 
 ```text
 User Transaction Input
